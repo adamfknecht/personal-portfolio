@@ -566,35 +566,45 @@ section:nth-child(even) {
 }
 .tl-company-badge {
   flex-shrink: 0;
-  width: 48px;
   height: 48px;
+  min-width: 48px;
+  padding: 0 12px;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
+}
+.tl-logo {
+  height: 22px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+.tl-wordmark {
+  font-size: 0.6rem;
   font-weight: 800;
-  font-size: 1rem;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #ffffff;
 }
 .waystar {
-  background: #ede9fe;
-  color: #7c3aed;
+  background: #7c3aed;
 }
 .aws {
-  background: #fff3d4;
-  color: #b45309;
+  background: #c07a00;
 }
 .humana {
-  background: #dbeafe;
-  color: #1d4ed8;
+  background: #007a99;
 }
 .google {
-  background: #dbeafe;
-  color: #1a73e8;
+  background: #1a73e8;
 }
 .google-nyc {
-  background: #dcfce7;
-  color: #16a34a;
+  background: #16a34a;
 }
 
 .tl-header > div:nth-child(2) {
