@@ -1,3 +1,6 @@
+document.getElementById("copyright-year").textContent =
+  new Date().getFullYear();
+
 // Sticky nav
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {

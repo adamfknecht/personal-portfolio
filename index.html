@@ -39,25 +39,64 @@
 
     <!-- ── Hero ── -->
     <section id="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <p class="hero-eyebrow">Hi, I'm</p>
-        <h1 class="hero-name">Adam Knecht</h1>
-        <h2 class="hero-title">
-          Technical Operations Leader<br />&amp; Cloud Strategist
-        </h2>
-        <p class="hero-meta">
-          <span><i class="fas fa-map-marker-alt"></i> Louisville, KY</span>
-          <span><i class="fas fa-briefcase"></i> AWS · Google · Humana</span>
-        </p>
-        <div class="hero-ctas">
-          <a href="assets/resume.pdf" download class="btn btn-primary">
-            <i class="fas fa-download"></i> Download Resume
-          </a>
-          <a href="#about" class="btn btn-outline">Learn More</a>
+      <div class="hero-photo-panel">
+        <img src="assets/headshot.jpg" alt="Adam Knecht" class="hero-photo" />
+        <div class="hero-photo-edge"></div>
+      </div>
+      <div class="hero-info-panel">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Hi, I'm</p>
+          <h1 class="hero-name">Adam Knecht</h1>
+          <h2 class="hero-title">
+            Technical Program Manager<br />&amp; Cloud Strategist
+          </h2>
+          <div class="hero-badge-row">
+            <span class="hero-now-badge">
+              <i class="fas fa-circle"></i> Waystar
+            </span>
+            <span class="hero-prev-badge"
+              >AWS &middot; Google &middot; Humana</span
+            >
+          </div>
+          <div class="hero-facts">
+            <div class="hero-fact">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Louisville, KY</span>
+            </div>
+            <div class="hero-fact">
+              <i class="fas fa-graduation-cap"></i>
+              <span>MBA &middot; University of Louisville</span>
+            </div>
+            <div class="hero-fact">
+              <i class="fas fa-award"></i>
+              <span>CompTIA &middot; AWS &middot; Azure Certified</span>
+            </div>
+          </div>
+          <div class="hero-ctas">
+            <a href="#experience" class="btn btn-outline">View Career</a>
+          </div>
+          <div class="hero-social">
+            <a
+              href="https://linkedin.com/in/adamknecht"
+              target="_blank"
+              rel="noopener"
+              class="hero-social-link"
+            >
+              <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+            </a>
+            <a
+              href="https://www.credly.com/users/adam-knecht"
+              target="_blank"
+              rel="noopener"
+              class="hero-social-link"
+            >
+              <i class="fas fa-certificate"></i><span>Credly</span>
+            </a>
+          </div>
         </div>
       </div>
-      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <a href="#experience" class="scroll-hint" aria-label="Scroll down">
         <i class="fas fa-chevron-down"></i>
       </a>
     </section>
@@ -77,7 +116,7 @@
               class="about-photo"
             />
             <div class="about-photo-badge">
-              <i class="fab fa-aws"></i> AWS Manager
+              <i class="fas fa-briefcase"></i> Technical Program Manager
             </div>
           </div>
           <div class="about-body">
@@ -120,6 +159,27 @@
         </div>
         <div class="timeline">
           <div class="tl-item">
+            <div class="tl-dot" style="--dot-color: #7c3aed"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-company-badge waystar">WS</div>
+                <div>
+                  <h3 class="tl-role">Technical Program Manager</h3>
+                  <p class="tl-company">Waystar · Louisville, KY</p>
+                </div>
+                <span class="tl-date">May 2026 – Present</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>
+                  Leading technical program management initiatives across
+                  cross-functional teams to drive delivery of complex,
+                  high-impact technology programs.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item">
             <div class="tl-dot" style="--dot-color: #ff9900"></div>
             <div class="tl-card">
               <div class="tl-header">
@@ -130,7 +190,7 @@
                   </h3>
                   <p class="tl-company">Amazon Web Services · Louisville, KY</p>
                 </div>
-                <span class="tl-date">May 2022 – Present</span>
+                <span class="tl-date">May 2022 – May 2026</span>
               </div>
               <ul class="tl-bullets">
                 <li>
@@ -459,13 +519,12 @@
               <i class="fas fa-certificate"></i>
               <span>Credly</span>
             </a>
-            <a href="assets/resume.pdf" download class="footer-link">
-              <i class="fas fa-file-pdf"></i>
-              <span>Resume</span>
-            </a>
           </div>
         </div>
-        <p class="footer-copy">&copy; 2025 Adam Knecht. All rights reserved.</p>
+        <p class="footer-copy">
+          &copy; <span id="copyright-year"></span> Adam Knecht. All rights
+          reserved.
+        </p>
       </div>
     </footer>
 
