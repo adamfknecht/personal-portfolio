@@ -875,10 +875,13 @@ section:nth-child(even) {
   /* Hero stacks: photo on top, info below */
   #hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 55vw auto;
+    grid-template-rows: clamp(320px, 85vw, 480px) auto;
+  }
+  .hero-photo {
+    object-position: center 18%;
   }
   .hero-photo-edge {
-    background: linear-gradient(to bottom, transparent 55%, #0f172a 100%);
+    background: linear-gradient(to bottom, transparent 60%, #0f172a 100%);
   }
   .hero-content {
     padding: 48px 32px 80px;
